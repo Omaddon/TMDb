@@ -9,5 +9,7 @@
 import Foundation
 
 final class WebServiceAssembly {
+    // Singleton (lazy)
+    // private(set) = permiso de escritura privado, lectura público
 	private(set) lazy var webService = WebService(configuration: .default)
 }
