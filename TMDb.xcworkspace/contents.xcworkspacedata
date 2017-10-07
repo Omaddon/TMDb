@@ -8,10 +8,10 @@
       location = "group:Playgrounds"
       name = "Playgrounds">
       <FileRef
-         location = "group:ReactiveX.playground">
+         location = "group:WebService.playground">
       </FileRef>
       <FileRef
-         location = "group:WebService.playground">
+         location = "group:ReactiveX.playground">
       </FileRef>
       <FileRef
          location = "group:Details.playground">

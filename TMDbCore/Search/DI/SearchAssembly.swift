@@ -10,37 +10,34 @@ import Foundation
 
 final class SearchAssembly {
 	private let imageLoadingAssembly: ImageLoadingAssembly
-    private let detailAssembly: DetailAssembly
+	private let detailAssembly: DetailAssembly
+	private let webServiceAssembly: WebServiceAssembly
 
 	init(imageLoadingAssembly: ImageLoadingAssembly,
-         detailAssembly: DetailAssembly) {
+	     detailAssembly: DetailAssembly,
+	     webServiceAssembly: WebServiceAssembly) {
 		self.imageLoadingAssembly = imageLoadingAssembly
-        self.detailAssembly = detailAssembly
+		self.detailAssembly = detailAssembly
+		self.webServiceAssembly = webServiceAssembly
 	}
 
-    func searchNavigator() -> SearchNavigator {
-        return PhoneSearchNavigator(viewControllerProvider: self)
-    }
-    
+	func searchNavigator() -> SearchNavigator {
+		return PhoneSearchNavigator(viewControllerProvider: self)
+	}
+
 	func presenter() -> SearchResultsPresenter {
-        return SearchResultsPresenter(detailNavigator: detailAssembly.detailNavigator())
+		return SearchResultsPresenter(detailNavigator: detailAssembly.detailNavigator())
 	}
 
 	func resultPresenter() -> SearchResultPresenter {
-		return SearchResultPresenter(imageRepository: imageLoadingAssembly.imageRepository)
+		return SearchResultPresenter(imageRepository: imageLoadingAssembly.imageRepository,
+		                             dateFormatter: webServiceAssembly.dateFormatter)
 	}
 }
 
-
 extension SearchAssembly: SearchResultsViewControllerProvider {
-    func searchResultsViewController() -> SearchResultsViewController {
-        return SearchResultsViewController(presenter: presenter(),
-                                           resultPresenter: resultPresenter())
-    }
+	func searchResultsViewController() -> SearchResultsViewController {
+		return SearchResultsViewController(presenter: presenter(),
+		                                   resultPresenter: resultPresenter())
+	}
 }
-
-
-
-
-
-

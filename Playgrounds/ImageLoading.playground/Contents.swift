@@ -1,5 +1,5 @@
 @testable import TMDbCore
-//import Kingfisher
+import Kingfisher
 
 import RxSwift
 import PlaygroundSupport
@@ -7,14 +7,11 @@ import PlaygroundSupport
 PlaygroundPage.current.needsIndefiniteExecution = true
 
 let disposeBag = DisposeBag()
-let assembly = CoreAssembly()
+let assembly = CoreAssembly(navigationController: UINavigationController())
 
 let imageRepository = assembly.imageLoadingAssembly.imageRepository
-// La línea de arriba es igual a lo de abajo, pero sin el assembly
-//let webService = WebService(configuration: .default)
-//let imageRepository = ImageRepository(webService: webService, imageManager: KingfisherManager.shared)
 
-imageRepository.image(at: "ncEmkHADNggjR0dlerOIHqmiY0O.jpg", size: .w780)
+imageRepository.image(at: "ncEmkHADNggjR0dlerOIHqmiY0O.jpg", size: .w300)
 	.subscribe(onNext: {
 		let image = $0
 		print(image)

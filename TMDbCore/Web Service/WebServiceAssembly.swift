@@ -9,7 +9,13 @@
 import Foundation
 
 final class WebServiceAssembly {
-    // Singleton (lazy)
-    // private(set) = permiso de escritura privado, lectura público
 	private(set) lazy var webService = WebService(configuration: .default)
+
+	private(set) lazy var dateFormatter: DateFormatter = {
+		let formatter = DateFormatter()
+		formatter.dateFormat = "yyyy-MM-dd"
+		formatter.timeZone = TimeZone(secondsFromGMT: 0)
+
+		return formatter
+	}()
 }
