@@ -9,6 +9,11 @@
 import UIKit
 import RxSwift
 
+
+protocol DetailViewControllerProvider: class {
+    func detailViewController(identifier: Int64, mediaType: MediaType) -> UIViewController
+}
+
 class DetailViewController: UIViewController {
 	// MARK: - Outlets
 

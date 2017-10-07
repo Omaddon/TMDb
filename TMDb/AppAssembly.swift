@@ -15,5 +15,5 @@ final class AppAssembly {
     
     // Tenemos que meter el rootVC en el AppDelegate para evitar referencias cíclicas.
     private(set) lazy var navigationController = UINavigationController()
-    private(set) lazy var coreAssembly = CoreAssembly()
+    private(set) lazy var coreAssembly = CoreAssembly(navigationController: navigationController)
 }

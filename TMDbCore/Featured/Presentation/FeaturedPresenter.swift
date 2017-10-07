@@ -9,6 +9,9 @@
 import RxSwift
 
 protocol FeaturedView: class {
+    // Usamos una propiedad "title" para aprovechar que el VC ya tiene de por sí una propiedad title
+    var title: String? { get set }
+    
 	func setShowsHeaderTitle(_ title: String)
 	func setMoviesHeaderTitle(_ title: String)
 
@@ -17,9 +20,15 @@ protocol FeaturedView: class {
 }
 
 final class FeaturedPresenter {
+    private let detailNavigator: DetailNavigator
 	weak var view: FeaturedView?
 
+    init(detailNavigator: DetailNavigator) {
+        self.detailNavigator = detailNavigator
+    }
+    
 	func didLoad() {
+        view?.title = NSLocalizedString("Featured", comment: "")
 		view?.setShowsHeaderTitle(NSLocalizedString("ON TV", comment: ""))
 		view?.setMoviesHeaderTitle(NSLocalizedString("IN THEATERS", comment: ""))
 
@@ -27,11 +36,11 @@ final class FeaturedPresenter {
 	}
 
 	func didSelect(show: Show) {
-		// TODO: implement
+		detailNavigator.showDetail(withIdentifier: show.identifier, mediaType: .show)
 	}
 
 	func didSelect(movie: Movie) {
-		// TODO: implement
+		detailNavigator.showDetail(withIdentifier: movie.identifier, mediaType: .movie)
 	}
 }
 
