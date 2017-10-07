@@ -12,6 +12,7 @@
 		8C3317D91F88CDCC00358507 /* PhoneDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3317D81F88CDCC00358507 /* PhoneDetailNavigator.swift */; };
 		8CB14B631F88E4DD0066116A /* SearchNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB14B621F88E4DD0066116A /* SearchNavigator.swift */; };
 		8CB14B651F88E6280066116A /* PhoneSearchNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB14B641F88E6280066116A /* PhoneSearchNavigator.swift */; };
+		8CB14B681F89429C0066116A /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB14B671F89429C0066116A /* Page.swift */; };
 		992D27B81F7FFCA600BA79DE /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992D27B71F7FFCA600BA79DE /* DetailPresenter.swift */; };
 		992D27BB1F7FFD5E00BA79DE /* DetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992D27BA1F7FFD5E00BA79DE /* DetailSection.swift */; };
 		993F1E7A1F7A9AC3004FE33B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F1E791F7A9AC3004FE33B /* Movie.swift */; };
@@ -153,6 +154,7 @@
 		8C3317D81F88CDCC00358507 /* PhoneDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetailNavigator.swift; sourceTree = "<group>"; };
 		8CB14B621F88E4DD0066116A /* SearchNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigator.swift; sourceTree = "<group>"; };
 		8CB14B641F88E6280066116A /* PhoneSearchNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSearchNavigator.swift; sourceTree = "<group>"; };
+		8CB14B671F89429C0066116A /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		992D27B71F7FFCA600BA79DE /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		992D27BA1F7FFD5E00BA79DE /* DetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSection.swift; sourceTree = "<group>"; };
 		993F1E791F7A9AC3004FE33B /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -287,6 +289,14 @@
 				8CB14B641F88E6280066116A /* PhoneSearchNavigator.swift */,
 			);
 			path = Navigators;
+			sourceTree = "<group>";
+		};
+		8CB14B661F89428E0066116A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				8CB14B671F89429C0066116A /* Page.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		992D27B91F7FFD1F00BA79DE /* Domain */ = {
@@ -535,6 +545,7 @@
 		99C5C90B1F7B86CD0038688F /* Featured */ = {
 			isa = PBXGroup;
 			children = (
+				8CB14B661F89428E0066116A /* Domain */,
 				99C5C90E1F7B86F90038688F /* DI */,
 				99C5C90D1F7B86F20038688F /* Presentation */,
 			);
@@ -855,6 +866,7 @@
 				997A441F1F7AA4110094E928 /* ReusableView.swift in Sources */,
 				997A44281F7AAB350094E928 /* WebServiceAssembly.swift in Sources */,
 				992D27BB1F7FFD5E00BA79DE /* DetailSection.swift in Sources */,
+				8CB14B681F89429C0066116A /* Page.swift in Sources */,
 				99A4653A1F7CE21C007F3B5B /* PosterStripCell.swift in Sources */,
 				8CB14B631F88E4DD0066116A /* SearchNavigator.swift in Sources */,
 				8CB14B651F88E6280066116A /* PhoneSearchNavigator.swift in Sources */,
