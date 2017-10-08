@@ -50,6 +50,7 @@ extension SearchResultsViewController: UISearchResultsUpdating {
 	func updateSearchResults(for searchController: UISearchController) {
 		// Update the search query as the user types
 		presenter.query.value = searchController.searchBar.text ?? ""
+        
 	}
 }
 

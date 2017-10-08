@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C6E51801F8A5F8C00ABD012 /* DetailHeader+MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E517F1F8A5F8C00ABD012 /* DetailHeader+MovieDetail.swift */; };
+		8C6E51821F8A665300ABD012 /* PosterStripItem+CastMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E51811F8A665300ABD012 /* PosterStripItem+CastMember.swift */; };
 		8CC571BF1F8A1823000EE088 /* FeaturedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC571BE1F8A1823000EE088 /* FeaturedRepository.swift */; };
+		8CC571C21F8A2CCE000EE088 /* SearchResultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC571C11F8A2CCE000EE088 /* SearchResultsRepository.swift */; };
+		8CC571C41F8A3DD5000EE088 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC571C31F8A3DD5000EE088 /* Credits.swift */; };
+		8CC571C61F8A3E32000EE088 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC571C51F8A3E32000EE088 /* MovieDetail.swift */; };
+		8CC571C91F8A5A18000EE088 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC571C81F8A5A18000EE088 /* MovieRepository.swift */; };
+		8CC571CB1F8A5B44000EE088 /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC571CA1F8A5B44000EE088 /* MoviePresenter.swift */; };
 		992D27B81F7FFCA600BA79DE /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992D27B71F7FFCA600BA79DE /* DetailPresenter.swift */; };
 		992D27BB1F7FFD5E00BA79DE /* DetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992D27BA1F7FFD5E00BA79DE /* DetailSection.swift */; };
 		993F1E7A1F7A9AC3004FE33B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993F1E791F7A9AC3004FE33B /* Movie.swift */; };
@@ -150,7 +157,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C6E517F1F8A5F8C00ABD012 /* DetailHeader+MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailHeader+MovieDetail.swift"; sourceTree = "<group>"; };
+		8C6E51811F8A665300ABD012 /* PosterStripItem+CastMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PosterStripItem+CastMember.swift"; sourceTree = "<group>"; };
 		8CC571BE1F8A1823000EE088 /* FeaturedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedRepository.swift; sourceTree = "<group>"; };
+		8CC571C11F8A2CCE000EE088 /* SearchResultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsRepository.swift; sourceTree = "<group>"; };
+		8CC571C31F8A3DD5000EE088 /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
+		8CC571C51F8A3E32000EE088 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		8CC571C81F8A5A18000EE088 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		8CC571CA1F8A5B44000EE088 /* MoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
 		992D27B71F7FFCA600BA79DE /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		992D27BA1F7FFD5E00BA79DE /* DetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSection.swift; sourceTree = "<group>"; };
 		993F1E791F7A9AC3004FE33B /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
@@ -283,10 +297,30 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		8CC571C01F8A2CB6000EE088 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				8CC571C11F8A2CCE000EE088 /* SearchResultsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8CC571C71F8A59F0000EE088 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				8CC571C81F8A5A18000EE088 /* MovieRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		992D27B91F7FFD1F00BA79DE /* Domain */ = {
 			isa = PBXGroup;
 			children = (
 				992D27BA1F7FFD5E00BA79DE /* DetailSection.swift */,
+				8CC571C31F8A3DD5000EE088 /* Credits.swift */,
+				8CC571C51F8A3E32000EE088 /* MovieDetail.swift */,
+				8C6E517F1F8A5F8C00ABD012 /* DetailHeader+MovieDetail.swift */,
+				8C6E51811F8A665300ABD012 /* PosterStripItem+CastMember.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -338,6 +372,7 @@
 		996690C01F7A973200AF16B3 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				8CC571C01F8A2CB6000EE088 /* Repositories */,
 				99B7FB8C1F88E4A8003CEF98 /* Navigators */,
 				997A44241F7AA9780094E928 /* DI */,
 				996690C21F7A989200AF16B3 /* Presentation */,
@@ -478,6 +513,7 @@
 		99A4652A1F7CCF5B007F3B5B /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				8CC571C71F8A59F0000EE088 /* Repositories */,
 				99B7FB871F88CAF3003CEF98 /* Navigators */,
 				998AD7DD1F7FF75900D3A222 /* DI */,
 				992D27B91F7FFD1F00BA79DE /* Domain */,
@@ -503,6 +539,7 @@
 				998AD7D91F7FEFD400D3A222 /* PosterStripPresenter.swift */,
 				992D27B71F7FFCA600BA79DE /* DetailPresenter.swift */,
 				996EAFE01F8007070060FD98 /* DetailHeaderPresenter.swift */,
+				8CC571CA1F8A5B44000EE088 /* MoviePresenter.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -851,6 +888,7 @@
 				99C5C9051F7B77750038688F /* SearchResultsViewController.swift in Sources */,
 				99C5C9171F7B8E550038688F /* CardPresenter.swift in Sources */,
 				99C5C90A1F7B78740038688F /* SearchResultsPresenter.swift in Sources */,
+				8CC571C41F8A3DD5000EE088 /* Credits.swift in Sources */,
 				99B9A3381F73CB71004F883E /* Endpoint.swift in Sources */,
 				998AD7D81F7FEEF800D3A222 /* MediaType.swift in Sources */,
 				99B9A34A1F74181A004F883E /* Configuration.swift in Sources */,
@@ -866,12 +904,15 @@
 				99B7FB891F88CB4D003CEF98 /* DetailNavigator.swift in Sources */,
 				9943B67F1F7BFF0300D46C90 /* FeaturedPresenter.swift in Sources */,
 				997A44261F7AA9930094E928 /* SearchAssembly.swift in Sources */,
+				8CC571C91F8A5A18000EE088 /* MovieRepository.swift in Sources */,
 				998AD7DF1F7FF76800D3A222 /* DetailAssembly.swift in Sources */,
 				99C5C91C1F7B966F0038688F /* FeaturedAssembly.swift in Sources */,
 				993F1E7E1F7A9C79004FE33B /* Media.swift in Sources */,
 				99A465411F7CE401007F3B5B /* PosterStripLayout.swift in Sources */,
+				8C6E51801F8A5F8C00ABD012 /* DetailHeader+MovieDetail.swift in Sources */,
 				997A441C1F7AA3060094E928 /* SearchResultPresenter.swift in Sources */,
 				9989A1211F74EDD400D8DCA7 /* ImageSize.swift in Sources */,
+				8C6E51821F8A665300ABD012 /* PosterStripItem+CastMember.swift in Sources */,
 				992D27B81F7FFCA600BA79DE /* DetailPresenter.swift in Sources */,
 				9989A1271F74F82900D8DCA7 /* CoreAssembly.swift in Sources */,
 				997A441F1F7AA4110094E928 /* ReusableView.swift in Sources */,
@@ -883,6 +924,7 @@
 				99B7FB8E1F88E4DA003CEF98 /* SearchNavigator.swift in Sources */,
 				99B7FB901F88E624003CEF98 /* PhoneSearchNavigator.swift in Sources */,
 				993F1E7C1F7A9C0E004FE33B /* Show.swift in Sources */,
+				8CC571CB1F8A5B44000EE088 /* MoviePresenter.swift in Sources */,
 				99A465351F7CDCAD007F3B5B /* DetailAboutView.swift in Sources */,
 				997A44231F7AA75A0094E928 /* Date+Utilities.swift in Sources */,
 				993F1E7A1F7A9AC3004FE33B /* Movie.swift in Sources */,
@@ -890,6 +932,8 @@
 				99A4652E1F7CCF93007F3B5B /* DetailViewController.swift in Sources */,
 				99C5C9101F7B87950038688F /* CardView.swift in Sources */,
 				996EAFE11F8007070060FD98 /* DetailHeaderPresenter.swift in Sources */,
+				8CC571C61F8A3E32000EE088 /* MovieDetail.swift in Sources */,
+				8CC571C21F8A2CCE000EE088 /* SearchResultsRepository.swift in Sources */,
 				99B9A33F1F73F4D0004F883E /* WebServiceConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
