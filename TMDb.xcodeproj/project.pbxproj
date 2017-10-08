@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8C6E51801F8A5F8C00ABD012 /* DetailHeader+MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E517F1F8A5F8C00ABD012 /* DetailHeader+MovieDetail.swift */; };
 		8C6E51821F8A665300ABD012 /* PosterStripItem+CastMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E51811F8A665300ABD012 /* PosterStripItem+CastMember.swift */; };
+		8C6E51841F8A70EC00ABD012 /* FeaturedPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E51831F8A70EC00ABD012 /* FeaturedPresenterTest.swift */; };
+		8C6E51861F8A71DD00ABD012 /* DetailNavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E51851F8A71DD00ABD012 /* DetailNavigatorMock.swift */; };
+		8C6E51881F8A732500ABD012 /* FeaturedRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E51871F8A732500ABD012 /* FeaturedRepositoryMock.swift */; };
 		8CC571BF1F8A1823000EE088 /* FeaturedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC571BE1F8A1823000EE088 /* FeaturedRepository.swift */; };
 		8CC571C21F8A2CCE000EE088 /* SearchResultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC571C11F8A2CCE000EE088 /* SearchResultsRepository.swift */; };
 		8CC571C41F8A3DD5000EE088 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC571C31F8A3DD5000EE088 /* Credits.swift */; };
@@ -47,7 +50,6 @@
 		9995F3191F73A228009BA4D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9995F3171F73A228009BA4D7 /* LaunchScreen.storyboard */; };
 		9995F3241F73A229009BA4D7 /* TMDbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9995F3231F73A229009BA4D7 /* TMDbTests.swift */; };
 		9995F3711F73A4E2009BA4D7 /* TMDbCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9995F3681F73A4E2009BA4D7 /* TMDbCore.framework */; };
-		9995F3781F73A4E2009BA4D7 /* TMDbCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9995F3771F73A4E2009BA4D7 /* TMDbCoreTests.swift */; };
 		9995F37A1F73A4E2009BA4D7 /* TMDbCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9995F36A1F73A4E2009BA4D7 /* TMDbCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9995F37D1F73A4E2009BA4D7 /* TMDbCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9995F3681F73A4E2009BA4D7 /* TMDbCore.framework */; };
 		9995F37E1F73A4E2009BA4D7 /* TMDbCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9995F3681F73A4E2009BA4D7 /* TMDbCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -159,6 +161,9 @@
 /* Begin PBXFileReference section */
 		8C6E517F1F8A5F8C00ABD012 /* DetailHeader+MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailHeader+MovieDetail.swift"; sourceTree = "<group>"; };
 		8C6E51811F8A665300ABD012 /* PosterStripItem+CastMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PosterStripItem+CastMember.swift"; sourceTree = "<group>"; };
+		8C6E51831F8A70EC00ABD012 /* FeaturedPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPresenterTest.swift; sourceTree = "<group>"; };
+		8C6E51851F8A71DD00ABD012 /* DetailNavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigatorMock.swift; sourceTree = "<group>"; };
+		8C6E51871F8A732500ABD012 /* FeaturedRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedRepositoryMock.swift; sourceTree = "<group>"; };
 		8CC571BE1F8A1823000EE088 /* FeaturedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedRepository.swift; sourceTree = "<group>"; };
 		8CC571C11F8A2CCE000EE088 /* SearchResultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsRepository.swift; sourceTree = "<group>"; };
 		8CC571C31F8A3DD5000EE088 /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
@@ -203,7 +208,6 @@
 		9995F36A1F73A4E2009BA4D7 /* TMDbCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMDbCore.h; sourceTree = "<group>"; };
 		9995F36B1F73A4E2009BA4D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9995F3701F73A4E2009BA4D7 /* TMDbCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDbCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9995F3771F73A4E2009BA4D7 /* TMDbCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDbCoreTests.swift; sourceTree = "<group>"; };
 		9995F3791F73A4E2009BA4D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9995F3861F73BDD0009BA4D7 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		9995F3871F73BDD0009BA4D7 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
@@ -492,8 +496,10 @@
 		9995F3761F73A4E2009BA4D7 /* TMDbCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				9995F3771F73A4E2009BA4D7 /* TMDbCoreTests.swift */,
 				9995F3791F73A4E2009BA4D7 /* Info.plist */,
+				8C6E51831F8A70EC00ABD012 /* FeaturedPresenterTest.swift */,
+				8C6E51851F8A71DD00ABD012 /* DetailNavigatorMock.swift */,
+				8C6E51871F8A732500ABD012 /* FeaturedRepositoryMock.swift */,
 			);
 			path = TMDbCoreTests;
 			sourceTree = "<group>";
@@ -942,7 +948,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9995F3781F73A4E2009BA4D7 /* TMDbCoreTests.swift in Sources */,
+				8C6E51861F8A71DD00ABD012 /* DetailNavigatorMock.swift in Sources */,
+				8C6E51881F8A732500ABD012 /* FeaturedRepositoryMock.swift in Sources */,
+				8C6E51841F8A70EC00ABD012 /* FeaturedPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
