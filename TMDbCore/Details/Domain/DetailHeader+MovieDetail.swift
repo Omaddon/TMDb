@@ -39,8 +39,9 @@ extension DetailHeader {
         backdropPath = person.posterPath
         
         let date = person.birthday.flatMap { dateFormatter.date(from: $0) }
-        let birthday = "\(String(describing: date))"
+        let birthday = (date?.year).map { String($0) }
+        let formatBirthday = "Born in \(birthday ?? "")"
         
-        metadata = [birthday].flatMap { $0 }.joined(separator: " - ")
+        metadata = [formatBirthday].flatMap { $0 }.joined(separator: " - ")
     }
 }

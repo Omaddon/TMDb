@@ -18,4 +18,12 @@ extension PosterStripItem {
         metadata = castMember.character
         posterPath = castMember.profilePath
     }
+    
+    init(taggedImages: TaggedImages.Images) {
+        identifier = taggedImages.identifier
+        mediaType = .movie
+        title = taggedImages.media.original_title
+        metadata = taggedImages.media.original_title
+        posterPath = taggedImages.media.posterPath
+    }
 }

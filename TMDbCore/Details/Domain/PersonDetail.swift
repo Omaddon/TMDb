@@ -9,21 +9,19 @@
 import Foundation
 
 struct PersonDetail: Decodable {
-//    let backdropPath: String?
     let identifier: Int64
     let overview: String?
     let posterPath: String?
     let birthday: String?
     let name: String
-//    let credits: Credits?
+    let taggedImages: TaggedImages?
     
     private enum CodingKeys: String, CodingKey {
-//        case backdropPath = "backdrop_path"
         case identifier = "id"
         case overview = "biography"
         case posterPath = "profile_path"
         case birthday
         case name
-//        case credits
+        case taggedImages
     }
 }

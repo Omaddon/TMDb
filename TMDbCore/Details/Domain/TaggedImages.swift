@@ -13,18 +13,20 @@ struct TaggedImages: Decodable {
         struct Media: Decodable {
             let posterPath: String?
             let backdropPath: String?
+            let original_title: String
             
             private enum CodingKeys: String, CodingKey {
                 case posterPath = "poster_path"
                 case backdropPath = "backdrop_path"
+                case original_title
             }
             
         }
         
         let aspect: Float?
-        let identifier: Int64?
+        let identifier: Int64
         let filePath: String?
-        let media: Media?
+        let media: Media
         
         private enum CodingKeys: String, CodingKey {
             case aspect = "aspect_ratio"

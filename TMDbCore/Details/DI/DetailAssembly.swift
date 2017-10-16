@@ -44,7 +44,8 @@ final class DetailAssembly {
     func showPresenter(identifier: Int64) -> DetailPresenter {
         return ShowPresenter(repository: showRepository(),
                               dateFormatter: webServiceAssembly.dateFormatter,
-                              identifier: identifier)
+                              identifier: identifier,
+                              detailNavigator: self.detailNavigator())
     }
     
     func personPresenter(identifier: Int64) -> DetailPresenter {
@@ -67,13 +68,6 @@ final class DetailAssembly {
 }
 
 extension DetailAssembly: DetailViewControllerProvider {
-	// FIXME: Temporary!!
-	private class DummyDetailPresenter: DetailPresenter {
-		var view: DetailView?
-
-		func didLoad() {}
-		func didSelect(item: PosterStripItem) {}
-	}
 
 	func detailViewController(identifier: Int64, mediaType: MediaType) -> UIViewController {
         let presenter: DetailPresenter
@@ -85,8 +79,6 @@ extension DetailAssembly: DetailViewControllerProvider {
             presenter = showPresenter(identifier: identifier)
         case .person:
             presenter = personPresenter(identifier: identifier)
-//        default:
-//            presenter = DummyDetailPresenter()
         }
         return DetailViewController(presenter: presenter,
                                     headerPresenter: detailHeaderPresenter(),
