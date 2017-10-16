@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C568EC31F9506DB00DFD811 /* ShowDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C568EC21F9506DB00DFD811 /* ShowDetail.swift */; };
+		8C568EC51F95075C00DFD811 /* ShowRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C568EC41F95075C00DFD811 /* ShowRepository.swift */; };
+		8C568EC71F95080400DFD811 /* ShowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C568EC61F95080400DFD811 /* ShowPresenter.swift */; };
 		8C6E51801F8A5F8C00ABD012 /* DetailHeader+MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E517F1F8A5F8C00ABD012 /* DetailHeader+MovieDetail.swift */; };
 		8C6E51821F8A665300ABD012 /* PosterStripItem+CastMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E51811F8A665300ABD012 /* PosterStripItem+CastMember.swift */; };
 		8C6E51841F8A70EC00ABD012 /* FeaturedPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E51831F8A70EC00ABD012 /* FeaturedPresenterTest.swift */; };
@@ -159,6 +162,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C568EC21F9506DB00DFD811 /* ShowDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetail.swift; sourceTree = "<group>"; };
+		8C568EC41F95075C00DFD811 /* ShowRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRepository.swift; sourceTree = "<group>"; };
+		8C568EC61F95080400DFD811 /* ShowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPresenter.swift; sourceTree = "<group>"; };
 		8C6E517F1F8A5F8C00ABD012 /* DetailHeader+MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailHeader+MovieDetail.swift"; sourceTree = "<group>"; };
 		8C6E51811F8A665300ABD012 /* PosterStripItem+CastMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PosterStripItem+CastMember.swift"; sourceTree = "<group>"; };
 		8C6E51831F8A70EC00ABD012 /* FeaturedPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPresenterTest.swift; sourceTree = "<group>"; };
@@ -313,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				8CC571C81F8A5A18000EE088 /* MovieRepository.swift */,
+				8C568EC41F95075C00DFD811 /* ShowRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -325,6 +332,7 @@
 				8CC571C51F8A3E32000EE088 /* MovieDetail.swift */,
 				8C6E517F1F8A5F8C00ABD012 /* DetailHeader+MovieDetail.swift */,
 				8C6E51811F8A665300ABD012 /* PosterStripItem+CastMember.swift */,
+				8C568EC21F9506DB00DFD811 /* ShowDetail.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -546,6 +554,7 @@
 				992D27B71F7FFCA600BA79DE /* DetailPresenter.swift */,
 				996EAFE01F8007070060FD98 /* DetailHeaderPresenter.swift */,
 				8CC571CA1F8A5B44000EE088 /* MoviePresenter.swift */,
+				8C568EC61F95080400DFD811 /* ShowPresenter.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -911,6 +920,7 @@
 				9943B67F1F7BFF0300D46C90 /* FeaturedPresenter.swift in Sources */,
 				997A44261F7AA9930094E928 /* SearchAssembly.swift in Sources */,
 				8CC571C91F8A5A18000EE088 /* MovieRepository.swift in Sources */,
+				8C568EC51F95075C00DFD811 /* ShowRepository.swift in Sources */,
 				998AD7DF1F7FF76800D3A222 /* DetailAssembly.swift in Sources */,
 				99C5C91C1F7B966F0038688F /* FeaturedAssembly.swift in Sources */,
 				993F1E7E1F7A9C79004FE33B /* Media.swift in Sources */,
@@ -928,6 +938,7 @@
 				8CC571BF1F8A1823000EE088 /* FeaturedRepository.swift in Sources */,
 				99A4653A1F7CE21C007F3B5B /* PosterStripCell.swift in Sources */,
 				99B7FB8E1F88E4DA003CEF98 /* SearchNavigator.swift in Sources */,
+				8C568EC71F95080400DFD811 /* ShowPresenter.swift in Sources */,
 				99B7FB901F88E624003CEF98 /* PhoneSearchNavigator.swift in Sources */,
 				993F1E7C1F7A9C0E004FE33B /* Show.swift in Sources */,
 				8CC571CB1F8A5B44000EE088 /* MoviePresenter.swift in Sources */,
@@ -941,6 +952,7 @@
 				8CC571C61F8A3E32000EE088 /* MovieDetail.swift in Sources */,
 				8CC571C21F8A2CCE000EE088 /* SearchResultsRepository.swift in Sources */,
 				99B9A33F1F73F4D0004F883E /* WebServiceConfiguration.swift in Sources */,
+				8C568EC31F9506DB00DFD811 /* ShowDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

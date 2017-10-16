@@ -40,8 +40,18 @@ final class DetailAssembly {
                               identifier: identifier)
     }
     
+    func showPresenter(identifier: Int64) -> DetailPresenter {
+        return ShowPresenter(repository: showRepository(),
+                              dateFormatter: webServiceAssembly.dateFormatter,
+                              identifier: identifier)
+    }
+    
     func movieRepository() -> MovieRepositoryProtocol {
         return MovieRepository(webService: webServiceAssembly.webService)
+    }
+    
+    func showRepository() -> ShowRepositoryProtocol {
+        return ShowRepository(webService: webServiceAssembly.webService)
     }
 }
 
@@ -60,6 +70,8 @@ extension DetailAssembly: DetailViewControllerProvider {
         switch mediaType {
         case .movie:
             presenter = moviePresenter(identifier: identifier)
+        case .show:
+            presenter = showPresenter(identifier: identifier)
         default:
             presenter = DummyDetailPresenter()
         }

@@ -20,4 +20,16 @@ extension DetailHeader {
         
         metadata = [year, duration].flatMap { $0 }.joined(separator: " - ")
     }
+    
+    init(show: ShowDetail, dateFormatter: DateFormatter) {
+        title = show.title
+        posterPath = show.posterPath
+        backdropPath = show.backdropPath
+        
+        let releaseDate = show.releaseDate.flatMap { dateFormatter.date(from: $0) }
+        let year = (releaseDate?.year).map { String($0) }
+        let duration = "\(show.runtime[0]) min."
+        
+        metadata = [year, duration].flatMap { $0 }.joined(separator: " - ")
+    }
 }
