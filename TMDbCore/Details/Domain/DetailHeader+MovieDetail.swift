@@ -40,7 +40,10 @@ extension DetailHeader {
         
         let date = person.birthday.flatMap { dateFormatter.date(from: $0) }
         let birthday = (date?.year).map { String($0) }
-        let formatBirthday = "Born in \(birthday ?? "")"
+        var formatBirthday = ""
+        if let birth = birthday {
+            formatBirthday = "Born in \(birth)"
+        }
         
         metadata = [formatBirthday].flatMap { $0 }.joined(separator: " - ")
     }
