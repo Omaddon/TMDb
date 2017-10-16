@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C320D6A1F95248800E44336 /* TaggedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C320D691F95248800E44336 /* TaggedImages.swift */; };
 		8C568EC31F9506DB00DFD811 /* ShowDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C568EC21F9506DB00DFD811 /* ShowDetail.swift */; };
 		8C568EC51F95075C00DFD811 /* ShowRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C568EC41F95075C00DFD811 /* ShowRepository.swift */; };
 		8C568EC71F95080400DFD811 /* ShowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C568EC61F95080400DFD811 /* ShowPresenter.swift */; };
@@ -15,6 +16,9 @@
 		8C6E51841F8A70EC00ABD012 /* FeaturedPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E51831F8A70EC00ABD012 /* FeaturedPresenterTest.swift */; };
 		8C6E51861F8A71DD00ABD012 /* DetailNavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E51851F8A71DD00ABD012 /* DetailNavigatorMock.swift */; };
 		8C6E51881F8A732500ABD012 /* FeaturedRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6E51871F8A732500ABD012 /* FeaturedRepositoryMock.swift */; };
+		8C909A921F9513D2007EEEEC /* PersonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C909A911F9513D2007EEEEC /* PersonPresenter.swift */; };
+		8C909A941F951447007EEEEC /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C909A931F951447007EEEEC /* PersonRepository.swift */; };
+		8C909A961F95148F007EEEEC /* PersonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C909A951F95148F007EEEEC /* PersonDetail.swift */; };
 		8CC571BF1F8A1823000EE088 /* FeaturedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC571BE1F8A1823000EE088 /* FeaturedRepository.swift */; };
 		8CC571C21F8A2CCE000EE088 /* SearchResultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC571C11F8A2CCE000EE088 /* SearchResultsRepository.swift */; };
 		8CC571C41F8A3DD5000EE088 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC571C31F8A3DD5000EE088 /* Credits.swift */; };
@@ -162,6 +166,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C320D691F95248800E44336 /* TaggedImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggedImages.swift; sourceTree = "<group>"; };
 		8C568EC21F9506DB00DFD811 /* ShowDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetail.swift; sourceTree = "<group>"; };
 		8C568EC41F95075C00DFD811 /* ShowRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRepository.swift; sourceTree = "<group>"; };
 		8C568EC61F95080400DFD811 /* ShowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPresenter.swift; sourceTree = "<group>"; };
@@ -170,6 +175,9 @@
 		8C6E51831F8A70EC00ABD012 /* FeaturedPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPresenterTest.swift; sourceTree = "<group>"; };
 		8C6E51851F8A71DD00ABD012 /* DetailNavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigatorMock.swift; sourceTree = "<group>"; };
 		8C6E51871F8A732500ABD012 /* FeaturedRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedRepositoryMock.swift; sourceTree = "<group>"; };
+		8C909A911F9513D2007EEEEC /* PersonPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonPresenter.swift; sourceTree = "<group>"; };
+		8C909A931F951447007EEEEC /* PersonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
+		8C909A951F95148F007EEEEC /* PersonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetail.swift; sourceTree = "<group>"; };
 		8CC571BE1F8A1823000EE088 /* FeaturedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedRepository.swift; sourceTree = "<group>"; };
 		8CC571C11F8A2CCE000EE088 /* SearchResultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsRepository.swift; sourceTree = "<group>"; };
 		8CC571C31F8A3DD5000EE088 /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
@@ -320,6 +328,7 @@
 			children = (
 				8CC571C81F8A5A18000EE088 /* MovieRepository.swift */,
 				8C568EC41F95075C00DFD811 /* ShowRepository.swift */,
+				8C909A931F951447007EEEEC /* PersonRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -329,10 +338,12 @@
 			children = (
 				992D27BA1F7FFD5E00BA79DE /* DetailSection.swift */,
 				8CC571C31F8A3DD5000EE088 /* Credits.swift */,
+				8C320D691F95248800E44336 /* TaggedImages.swift */,
 				8CC571C51F8A3E32000EE088 /* MovieDetail.swift */,
 				8C6E517F1F8A5F8C00ABD012 /* DetailHeader+MovieDetail.swift */,
 				8C6E51811F8A665300ABD012 /* PosterStripItem+CastMember.swift */,
 				8C568EC21F9506DB00DFD811 /* ShowDetail.swift */,
+				8C909A951F95148F007EEEEC /* PersonDetail.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -555,6 +566,7 @@
 				996EAFE01F8007070060FD98 /* DetailHeaderPresenter.swift */,
 				8CC571CA1F8A5B44000EE088 /* MoviePresenter.swift */,
 				8C568EC61F95080400DFD811 /* ShowPresenter.swift */,
+				8C909A911F9513D2007EEEEC /* PersonPresenter.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -902,6 +914,7 @@
 				9989A1231F74EE8500D8DCA7 /* ImageRepository.swift in Sources */,
 				99C5C9051F7B77750038688F /* SearchResultsViewController.swift in Sources */,
 				99C5C9171F7B8E550038688F /* CardPresenter.swift in Sources */,
+				8C320D6A1F95248800E44336 /* TaggedImages.swift in Sources */,
 				99C5C90A1F7B78740038688F /* SearchResultsPresenter.swift in Sources */,
 				8CC571C41F8A3DD5000EE088 /* Credits.swift in Sources */,
 				99B9A3381F73CB71004F883E /* Endpoint.swift in Sources */,
@@ -919,6 +932,7 @@
 				99B7FB891F88CB4D003CEF98 /* DetailNavigator.swift in Sources */,
 				9943B67F1F7BFF0300D46C90 /* FeaturedPresenter.swift in Sources */,
 				997A44261F7AA9930094E928 /* SearchAssembly.swift in Sources */,
+				8C909A941F951447007EEEEC /* PersonRepository.swift in Sources */,
 				8CC571C91F8A5A18000EE088 /* MovieRepository.swift in Sources */,
 				8C568EC51F95075C00DFD811 /* ShowRepository.swift in Sources */,
 				998AD7DF1F7FF76800D3A222 /* DetailAssembly.swift in Sources */,
@@ -943,9 +957,11 @@
 				993F1E7C1F7A9C0E004FE33B /* Show.swift in Sources */,
 				8CC571CB1F8A5B44000EE088 /* MoviePresenter.swift in Sources */,
 				99A465351F7CDCAD007F3B5B /* DetailAboutView.swift in Sources */,
+				8C909A961F95148F007EEEEC /* PersonDetail.swift in Sources */,
 				997A44231F7AA75A0094E928 /* Date+Utilities.swift in Sources */,
 				993F1E7A1F7A9AC3004FE33B /* Movie.swift in Sources */,
 				993F1E831F7A9EE3004FE33B /* SearchResult.swift in Sources */,
+				8C909A921F9513D2007EEEEC /* PersonPresenter.swift in Sources */,
 				99A4652E1F7CCF93007F3B5B /* DetailViewController.swift in Sources */,
 				99C5C9101F7B87950038688F /* CardView.swift in Sources */,
 				996EAFE11F8007070060FD98 /* DetailHeaderPresenter.swift in Sources */,

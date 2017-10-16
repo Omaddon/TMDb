@@ -32,4 +32,15 @@ extension DetailHeader {
         
         metadata = [year, duration].flatMap { $0 }.joined(separator: " - ")
     }
+    
+    init(person: PersonDetail, dateFormatter: DateFormatter) {
+        title = person.name
+        posterPath = person.posterPath
+        backdropPath = person.posterPath
+        
+        let date = person.birthday.flatMap { dateFormatter.date(from: $0) }
+        let birthday = "\(String(describing: date))"
+        
+        metadata = [birthday].flatMap { $0 }.joined(separator: " - ")
+    }
 }

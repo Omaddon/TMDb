@@ -20,7 +20,7 @@ final class SearchResultsPresenter {
 	private(set) lazy var searchResults: Observable<[SearchResult]> = query.asObservable()
         .distinctUntilChanged()
         // Esto hace que por consola salgan todos los eventos que se van produciendo
-        .debug()
+//        .debug()
         .debounce(0.3, scheduler: MainScheduler.instance)
         // Para poder cancelar la anterior petición debemos usar esto, en lugar de flatMap, pues
         // solo queremos la última petición (pulsación de usuario en la búsqueda)
