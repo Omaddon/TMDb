@@ -1,7 +1,7 @@
 # Installation
 
 ```sh
-$ git clone https://github.com/smarrerof/kc-ios3 <dir>
+$ git clone https://github.com/Omaddon/TMDb/tree/master <dir>
 $ cd <dir>
 $ carthage build --platform iOS
 $ cd <dir>/TMDbCore/Config
