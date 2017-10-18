@@ -1,5 +1,4 @@
 # Installation
---
 
 ```sh
 $ git clone https://github.com/smarrerof/kc-ios3 <dir>
