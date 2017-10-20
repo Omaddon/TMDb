@@ -36,7 +36,20 @@ extension DetailHeader {
     init(person: PersonDetail, dateFormatter: DateFormatter) {
         title = person.name
         posterPath = person.posterPath
-        backdropPath = person.posterPath
+        
+        let taggedImages = person.taggedImages?.results[0].media
+        var path: String?
+        
+        switch taggedImages {
+        case .movie(let movie)?:
+            path = movie.posterPath
+        case .show(let show)?:
+            path = show.posterPath
+        default:
+            path = ""
+        }
+
+        backdropPath = path
         
         let date = person.birthday.flatMap { dateFormatter.date(from: $0) }
         let birthday = (date?.year).map { String($0) }

@@ -66,7 +66,7 @@ final class PersonPresenter: DetailPresenter {
         }
         
         let items = person.taggedImages?.results
-//            .filter { $0.aspectRatio == (16/9) }
+            .filter { $0.aspectRatio == (16/9) }
             .map { PosterStripItem(taggedImages: $0) }
         
         if let items = items {

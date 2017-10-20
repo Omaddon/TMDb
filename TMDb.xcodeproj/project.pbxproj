@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8C320D6A1F95248800E44336 /* TaggedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C320D691F95248800E44336 /* TaggedImages.swift */; };
+		8C3765A41F9A503700D19326 /* PosterStripItem+TaggedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3765A31F9A503700D19326 /* PosterStripItem+TaggedImages.swift */; };
 		8C568EC31F9506DB00DFD811 /* ShowDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C568EC21F9506DB00DFD811 /* ShowDetail.swift */; };
 		8C568EC51F95075C00DFD811 /* ShowRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C568EC41F95075C00DFD811 /* ShowRepository.swift */; };
 		8C568EC71F95080400DFD811 /* ShowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C568EC61F95080400DFD811 /* ShowPresenter.swift */; };
@@ -167,6 +168,7 @@
 
 /* Begin PBXFileReference section */
 		8C320D691F95248800E44336 /* TaggedImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggedImages.swift; sourceTree = "<group>"; };
+		8C3765A31F9A503700D19326 /* PosterStripItem+TaggedImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PosterStripItem+TaggedImages.swift"; sourceTree = "<group>"; };
 		8C568EC21F9506DB00DFD811 /* ShowDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDetail.swift; sourceTree = "<group>"; };
 		8C568EC41F95075C00DFD811 /* ShowRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRepository.swift; sourceTree = "<group>"; };
 		8C568EC61F95080400DFD811 /* ShowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPresenter.swift; sourceTree = "<group>"; };
@@ -342,6 +344,7 @@
 				8CC571C51F8A3E32000EE088 /* MovieDetail.swift */,
 				8C6E517F1F8A5F8C00ABD012 /* DetailHeader+MovieDetail.swift */,
 				8C6E51811F8A665300ABD012 /* PosterStripItem+CastMember.swift */,
+				8C3765A31F9A503700D19326 /* PosterStripItem+TaggedImages.swift */,
 				8C568EC21F9506DB00DFD811 /* ShowDetail.swift */,
 				8C909A951F95148F007EEEEC /* PersonDetail.swift */,
 			);
@@ -936,6 +939,7 @@
 				8CC571C91F8A5A18000EE088 /* MovieRepository.swift in Sources */,
 				8C568EC51F95075C00DFD811 /* ShowRepository.swift in Sources */,
 				998AD7DF1F7FF76800D3A222 /* DetailAssembly.swift in Sources */,
+				8C3765A41F9A503700D19326 /* PosterStripItem+TaggedImages.swift in Sources */,
 				99C5C91C1F7B966F0038688F /* FeaturedAssembly.swift in Sources */,
 				993F1E7E1F7A9C79004FE33B /* Media.swift in Sources */,
 				99A465411F7CE401007F3B5B /* PosterStripLayout.swift in Sources */,
