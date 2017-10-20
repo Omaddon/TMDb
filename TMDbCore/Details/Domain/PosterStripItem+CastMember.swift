@@ -19,6 +19,24 @@ extension PosterStripItem {
         posterPath = castMember.profilePath
     }
     
+    init(taggedImages: TaggedImages) {
+        switch taggedImages.media {
+        case .movie(let movie):
+            mediaType = .movie
+            identifier = movie.identifier
+            title = movie.title
+            metadata = movie.title
+            posterPath = movie.backdropPath
+        case .show(let show):
+            mediaType = .show
+            identifier = show.identifier
+            title = show.name
+            metadata = show.name
+            posterPath = show.backdropPath
+        }
+    }
+    
+    /*
     init(taggedImages: TaggedImages.Images) {
         identifier = taggedImages.identifier
         mediaType = .movie
@@ -26,4 +44,5 @@ extension PosterStripItem {
         metadata = taggedImages.media.original_title
         posterPath = taggedImages.media.posterPath
     }
+ */
 }

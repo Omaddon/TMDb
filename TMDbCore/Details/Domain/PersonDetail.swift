@@ -14,7 +14,7 @@ struct PersonDetail: Decodable {
     let posterPath: String?
     let birthday: String?
     let name: String
-    let taggedImages: TaggedImages?
+    let taggedImages: Page<TaggedImages>?
     
     private enum CodingKeys: String, CodingKey {
         case identifier = "id"
@@ -22,6 +22,6 @@ struct PersonDetail: Decodable {
         case posterPath = "profile_path"
         case birthday
         case name
-        case taggedImages
+        case taggedImages = "tagged_images"
     }
 }

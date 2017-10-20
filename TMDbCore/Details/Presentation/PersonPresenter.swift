@@ -11,6 +11,7 @@ import RxSwift
 final class PersonPresenter: DetailPresenter {
     private let repository: PersonRepositoryProtocol
     private let dateFormatter: DateFormatter
+    private let navigator: DetailNavigator
     
     private let identifier: Int64
     private let disposeBag = DisposeBag()
@@ -19,10 +20,12 @@ final class PersonPresenter: DetailPresenter {
     
     init(repository: PersonRepositoryProtocol,
          dateFormatter: DateFormatter,
-         identifier: Int64) {
+         identifier: Int64,
+         navigator: DetailNavigator) {
         self.repository = repository
         self.dateFormatter = dateFormatter
         self.identifier = identifier
+        self.navigator = navigator
     }
     
     
@@ -43,7 +46,14 @@ final class PersonPresenter: DetailPresenter {
     }
     
     func didSelect(item: PosterStripItem) {
-        
+        switch item.mediaType {
+        case .movie:
+            navigator.showDetail(withIdentifier: item.identifier, mediaType: .movie)
+        case .show:
+            navigator.showDetail(withIdentifier: item.identifier, mediaType: .show)
+        case .person:
+            print("Incorrect mediaType")
+        }
     }
     
     private func detailSections(for person: PersonDetail) -> [DetailSection] {
@@ -52,13 +62,15 @@ final class PersonPresenter: DetailPresenter {
         ]
         
         if let overview = person.overview {
-            detailSections.append(.about(title: "Overview", detail: overview))
+            detailSections.append(.about(title: "Biography", detail: overview))
         }
         
-        let items = person.taggedImages?.results.map { PosterStripItem(taggedImages: $0) }
+        let items = person.taggedImages?.results
+//            .filter { $0.aspectRatio == (16/9) }
+            .map { PosterStripItem(taggedImages: $0) }
         
         if let items = items {
-            detailSections.append(.posterStrip(title: "Cast", items: items))
+            detailSections.append(.posterStrip(title: "Known for", items: items))
         }
         
         return detailSections
